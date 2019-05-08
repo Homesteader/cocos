@@ -29,20 +29,21 @@ cc.Class({
         // },
 
         pickRadius : 0,
+    
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     getPlayerDistance: function(){
         var playerPos = this.game.player.getPosition();
-        var dist = this.node.position.sub(playerPos).mag()
+        var dist = this.node.position.sub(playerPos).mag();
         return dist;
     },
 
     onPicked:function(){
         this.game.spawnNewStar();
         this.node.destroy();
-        this.game.gainScore();
+        this.game.gainScore();        
     },
 
     update(dt){

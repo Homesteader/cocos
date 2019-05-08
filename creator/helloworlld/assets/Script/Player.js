@@ -65,7 +65,13 @@ cc.Class({
 
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP,this.onKeyUp,this);
-
+        
+        // var self = this;
+        // var remoteUrl = "http://www.peacelive.cn/image/1000.jpg";
+        // cc.loader.load(remoteUrl,function(err,texture){
+        //     console.log("xxxxxxxxxxxxxxxxxxxxxxx"+err)
+        //     self.node.getComponent(cc.Sprite).spriteFrame.setTexture(texture)
+        // });
     },
     
     onDestroy(){
